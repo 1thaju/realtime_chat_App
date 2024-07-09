@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="user-interface">
+        <div class="header">
+            <h1>Messenger <span><i class="fa-brands fa-facebook-messenger"></i></span></h1>
+        </div>
+        <div class="container">
+            <div class="container_header">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username" value="Unknown">
+            </div>
+            <div class="messages">
+                <ul id="messagecontainer">
+                    <li class="leftmessage">
+                        <p class="message">
+                            
+                            <p class="address"></p>
+                        </p>
+                    </li>
+                    <li class="rightmessage">
+                        <p class="message">
+                            
+                            <p class="address"></p>
+                        </p>
+                    </li>
+                    <li class="feedback" id="feedback">Messages are end-to-end encrypted</li>
+                </ul>
+            </div>
+            <form class="send-message" id="send-message">
+                <input type="text" name="input-message" id="input-message">
+                <button type="submit" class="submit-button">Send <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+        <h6 class="clients-total" id="clients-total">
+            Total Client : 3
+        </h6>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" integrity="sha512-hUhvpC5f8cgc04OZb55j0KNGh4eh7dLxd/dPSJ5VyzqDWxsayYbojWyl5Tkcgrmb/RVKCRJI1jNlRbVP4WWC4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="script.js"></script>
+</body>
+</html>
